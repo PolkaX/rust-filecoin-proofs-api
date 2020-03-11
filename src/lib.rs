@@ -36,8 +36,8 @@ impl Default for ResponseStatus {
 #[derive(Clone, Copy, Default)]
 pub struct SealPreCommitResponse {
     status_code: ResponseStatus,
-    comm_d: Commitment,
-    comm_r: Commitment,
+    pub comm_d: Commitment,
+    pub comm_r: Commitment,
 }
 
 pub fn seal_pre_commit<R, S, T>(
